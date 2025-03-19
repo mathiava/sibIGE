@@ -7,7 +7,7 @@ library(lavaan)
 dat1 = dat[!is.na(dat$gm) & !is.na(dat$gp) & !is.na(dat$g1) & !is.na(dat$g2) & 
                !(is.na(dat$x1) & is.na(dat$x2)),]
    
-   c =~ 1*x1 + 1*x2
+model1 <-  "c =~ 1*x1 + 1*x2
    
    g1 + g2 ~ 0.5*gm + 0.5*gp
    
