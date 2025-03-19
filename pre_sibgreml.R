@@ -1,4 +1,3 @@
-
 dges = grm %*% zdir
 iges = zsb %*% grm %*% t(zsb)
 idges = zdir %*% grm %*% t(zsb) + 
